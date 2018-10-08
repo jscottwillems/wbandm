@@ -1,0 +1,28 @@
+
+.a {
+  background-color: #615c62;
+}
+.b {
+  background-color: #362b53;
+}
+.c {
+  background-color: #522455;
+}
+.d {
+  background-color: #16647A;
+}
+.e {
+  background-color: #7CAFC2;
+}
+.pCol {
+  display: inline-block;
+  padding: 9px;
+}
+.pal {
+  padding: 9px;
+  background-color: white;
+  display: inline-block;
+  position: fixed;
+  top: 100%;
+  margin-top: -63px;
+}

@@ -1,0 +1,30 @@
+nav {
+    background: linear-gradient(to right, #362b53, #652d69);
+    padding: 0px 30px 0px 30px;
+}
+
+#phone {
+    margin-right: 2px !important;
+}
+
+#phone-icon {
+    font-size: 12px;
+    margin-left: .01px !important;
+}
+
+.logo {
+    font-size: 2em;
+}
+
+.nav-mobile {
+    display: hidden !important;
+}
+
+.modal:focus,
+.dropdown-trigger:focus {
+    outline: none !important;
+}
+
+.dropdown-content {
+    margin-top: 5px !important;
+}

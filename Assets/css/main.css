@@ -1,0 +1,19 @@
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    background: rgb(207, 243, 250);
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+#center-content {
+    width: 90vw;
+    margin: 50px auto 50px auto;
+    padding: 50px;
+    min-height: 500px;
+    max-height: auto;
+    background: rgba(124, 175, 194, 0.562);
+}

@@ -1,0 +1,40 @@
+.footer-copyright {
+    background: #2a1e47 !important;
+}
+
+.page-footer {
+    background: linear-gradient(to top, #362b53, #652d69ee) !important;
+
+}
+
+.footer-container {
+    position: relative !important;
+}
+
+footer hr {
+    opacity: 0.3;
+}
+
+#img-container {
+    text-align: center;
+    position: absolute;
+    display: block;
+    z-index: -1;
+    left: 0;
+    width: 100%;
+}
+
+#footer-back {
+    padding: 0;
+    width: 80%;
+    margin: auto;
+    opacity: .5;
+}
+
+.foot-links a:hover {
+    border-bottom: 2px solid rgba(255, 255, 255, 0.74);
+}
+
+#store-info {
+    font-size: 1.1em;
+}
