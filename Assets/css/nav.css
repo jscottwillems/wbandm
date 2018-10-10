@@ -16,6 +16,16 @@ nav {
     font-size: 2em;
 }
 
+.logo:hover {
+    background: none !important;
+
+}
+
+#logo-nav {
+    width: 180px;
+    margin-top: 5px;
+}
+
 .nav-mobile {
     display: hidden !important;
 }
