@@ -17,3 +17,30 @@ main {
     max-height: auto;
     background: rgba(124, 175, 194, 0.562);
 }
+
+.welcome {
+    text-shadow: 2px 2px rgba(75, 74, 74, 0.795);
+}
+
+#main-break {
+    border: 1px solid rgb(143, 176, 219);
+    width: 60%;
+    opacity: .8;
+}
+
+.main-text {
+    width: 60%;
+    margin: auto;
+    text-align: justify;
+    font-size: 18px;
+}
+
+.why-container {
+    width: 40%;
+    margin: auto;
+}
+
+.why li {
+    list-style-type: disc !important;
+    text-align: left;
+}

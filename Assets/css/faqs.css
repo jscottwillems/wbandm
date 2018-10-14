@@ -1,0 +1,19 @@
+.accordian {
+    width: 80%;
+    margin: auto;
+}
+
+.collapsible-header {
+    color: white;
+    background:  #362b53;
+    padding: 20px !important;
+}
+
+.collapsible-header:hover {
+    background: #652d69;
+}
+
+.collapsible-body {
+    text-align: left;
+    background: rgb(207, 243, 250);
+}
