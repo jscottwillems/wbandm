@@ -18,12 +18,13 @@ nav {
 
 .logo:hover {
     background: none !important;
-
 }
 
 #logo-nav {
     width: 180px;
     margin-top: 5px;
+    -webkit-filter: drop-shadow(1px 1px rgba(233, 231, 231, 0.918));
+    filter: drop-shadow(1px 1px rgba(233, 231, 231, 0.918));
 }
 
 .nav-mobile {
