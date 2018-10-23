@@ -13,10 +13,21 @@ main {
 #center-content {
     width: 90vw;
     margin: 50px auto 50px auto;
-    padding: 50px;
+    padding: 1em;
     min-height: 500px;
     max-height: auto;
     background: rgba(154, 228, 255, 0.911);
+    border-radius: 9px; 
+}
+
+.main-head {
+    text-align: center;
+    padding: 1em;
+    color: white;
+    width: 90vw;
+    margin: 50px auto 0px auto;
+    background: linear-gradient(to right, #362b53f6, #652d69f6);
+    border-radius: 9px;
 }
 
 .welcome {
@@ -31,7 +42,10 @@ main {
 
 .main-text {
     width: 60%;
-    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
     text-align: justify;
     font-size: 18px;
 }

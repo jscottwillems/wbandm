@@ -22,6 +22,31 @@
     width: 80%;
 }
 
+.item-head {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.color-buttons {
+    width: 100%;
+    height: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 16%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding: 0 1em 0 1em;
+    margin: 8px 0px 8px 0px;
+}
+
+.color-button {
+    background: green;
+    border: none !important;
+    height: 1em;
+    width: 1em;
+    border-radius: 180%;
+}
+
 #item-modal {
     width: 40%;
     padding: 1em;
