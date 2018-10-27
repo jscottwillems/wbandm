@@ -1,0 +1,9 @@
+select{
+	display: block;
+}
+.formContent{
+    display: none;
+}
+textarea {
+  resize: none;
+}
