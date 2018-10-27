@@ -20,6 +20,7 @@
 
 .store-item img{
     width: 80%;
+    margin-top: 10px;
 }
 
 .item-head {
@@ -28,15 +29,18 @@
 }
 
 .color-buttons {
-    width: 100%;
+    width: 80%;
     height: 40px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-gap: 16%;
+    grid-gap: 1em;
     overflow-y: scroll;
     overflow-x: hidden;
-    padding: 0 1em 0 1em;
-    margin: 8px 0px 8px 0px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    padding: 1em;
 }
 
 .color-button {
@@ -51,6 +55,7 @@
     width: 40%;
     padding: 1em;
     height: auto;
+    margin-top: 30px;
 }
 
 #item-modal img {

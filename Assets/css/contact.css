@@ -1,9 +1,17 @@
+/*materialize overwrite*/
 select{
 	display: block;
 }
+/*---*/
 .formContent{
     display: none;
 }
 textarea {
   resize: none;
+ }
+.map {
+    margin: auto;
+    width: 500px;
+    height: 350px;
+    margin-bottom: 20px;
 }

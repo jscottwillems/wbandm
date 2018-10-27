@@ -42,12 +42,15 @@
         </div>
         <div id="center-content" class="center z-depth-3">
             <div class="main-text">
-                <p>WB&M is a small, local, family-owned business dedicated to creating your own custom orders. From the
+                <p><b>WB&M</b> is a small, local, family-owned business dedicated to creating your own custom orders.
+                    From the
                     initial consultation, throughout the design phase and final production, our drive is to meet all
                     customer needs and satisfaction.</p>
-                <br>
-                <p class="center"><b>Why WB&M? We strive to</b></p>
+            </div>
+            <br>
+            <div class="lower-main">
                 <div class="why-container">
+                    <p class="center"><b>Why WB&M? We strive to:</b></p>
                     <ul class="why">
                         <li>Be attentive to detail</li>
                         <li>Produce impressive work</li>
@@ -55,6 +58,15 @@
                         <li>Consistently exceed expectations</li>
                         <li>Work as a determined and result oriented team</li>
                     </ul>
+                </div>
+                <div class="image-slider">
+                    <div class="carousel">
+                        <a class="carousel-item" href="#one!"><img src="./Assets/imgs/shirt.jpg"></a>
+                        <a class="carousel-item" href="#two!"><img src="./Assets/imgs/shirt.jpg"></a>
+                        <a class="carousel-item" href="#three!"><img src="./Assets/imgs/shirt.jpg"></a>
+                        <a class="carousel-item" href="#four!"><img src="./Assets/imgs/shirt.jpg"></a>
+                        <a class="carousel-item" href="#five!"><img src="./Assets/imgs/shirt.jpg"></a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -100,6 +112,14 @@
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.carousel').carousel();
+            setInterval(function(){
+                $(".carousel").carousel('next');
+            }, 3500)
+        });
+    </script>
 </body>
 
 </html>

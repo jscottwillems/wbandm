@@ -50,12 +50,24 @@ main {
     font-size: 18px;
 }
 
+.lower-main {
+    width: 60%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+}
+
 .why-container {
-    width: 40%;
+    width: 100%;
+    padding: 1em;
     margin: auto;
 }
 
 .why li {
     list-style-type: disc !important;
     text-align: left;
+}
+
+.image-slider {
+    width: 100%;
 }
