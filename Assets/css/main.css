@@ -36,12 +36,12 @@ main {
 
 #main-break {
   border: 1px solid rgb(143, 176, 219);
-  width: 60%;
+  width: 80%;
   opacity: 0.8;
 }
 
 .main-text {
-  width: 60%;
+  width: 80%;
   margin-top: 50px;
   margin-bottom: 50px;
   margin-left: auto;
@@ -51,7 +51,7 @@ main {
 }
 
 .center-text {
-  width: 60%;
+  width: 80%;
   margin-top: -30px;
   margin-bottom: 50px;
   margin-left: auto;
@@ -70,7 +70,7 @@ main {
 }
 
 .lower-main {
-  width: 60%;
+  width: 80%;
   margin: auto;
   display: grid;
   margin-top: -80px;

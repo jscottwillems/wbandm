@@ -1,5 +1,5 @@
 .profile {
-    width: 100%;
+    width: 90%;
     margin-left: auto;
     margin-right: auto;
     margin-top: 25px;
@@ -7,15 +7,23 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 1em;
+    vertical-align: middle;
 }
 .profile-img {
-    width: 55%;
+    width: 70%;
     border-radius: 180%;
     border: 4px solid aliceblue;
 }
 
+.profile-img-container {
+    text-align: center;
+}
+
 .profile-text {
-    line-height: 10px;
-    padding-top: 40px;
-    font-size: 22px;
+    padding-top: 3em;
+    line-height: 20px;
+    font-size: 2vw;
+    text-align: center;
+    vertical-align: middle;
+    display: inline-block;
 }
