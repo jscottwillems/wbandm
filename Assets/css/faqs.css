@@ -7,13 +7,15 @@
     color: white;
     background:  #362b53;
     padding: 20px !important;
+    font-size: 18px;
 }
 
 .collapsible-header:hover {
-    background: #652d69;
+    background: #652d69d8;
 }
 
 .collapsible-body {
     text-align: left;
-    background: rgb(207, 243, 250);
+    background: rgba(207, 243, 250, 0.596);
+    font-size: 18px;
 }

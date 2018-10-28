@@ -50,6 +50,20 @@ main {
   font-size: 18px;
 }
 
+.center-text {
+  width: 60%;
+  margin-top: -30px;
+  margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: justify;
+  font-size: 18px;
+}
+
+.services {
+  margin-top: -10px;
+}
+
 .company {
   font-size: 36px;
   line-height: 25px;
@@ -59,7 +73,7 @@ main {
   width: 60%;
   margin: auto;
   display: grid;
-  margin-top: -50px;
+  margin-top: -80px;
   grid-template-columns: 2fr 2fr;
 }
 

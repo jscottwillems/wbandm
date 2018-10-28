@@ -1,0 +1,18 @@
+.catalog-container {
+    width: 80%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 18px;
+}
+
+.catalog-img {
+    width: 80%;
+    height: auto;
+}
+
+.catalog-text {
+    width: 60%;
+    margin: auto;
+}
