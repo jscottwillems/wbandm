@@ -67,7 +67,6 @@ main {
   width: 100%;
   font-size: 18px;
   padding: 1em;
-
   margin: auto;
 }
 
@@ -78,4 +77,16 @@ main {
 
 .image-slider {
   width: 100%;
+}
+
+.testimonials {
+  width: 60%;
+  margin: auto;
+}
+
+.testimonial {
+  width: 70% !important;
+  height: auto;
+  font-size: 18px !important;
+  margin: auto;
 }

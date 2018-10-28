@@ -63,15 +63,15 @@
                     </ul>
                 </div>
                 <div class="image-slider">
-                    <div class="carousel">
-                        <a class="carousel-item z-depth-3" href="#one!"><img src="./Assets/imgs/slide-1.jpg"></a>
-                        <a class="carousel-item z-depth-3" href="#two!"><img src="./Assets/imgs/slide-2.jpg"></a>
-                        <a class="carousel-item z-depth-3" href="#three!"><img src="./Assets/imgs/slide-3.jpg"></a>
-                        <a class="carousel-item z-depth-3" href="#four!"><img src="./Assets/imgs/slide-4.jpg"></a>
-                        <a class="carousel-item z-depth-3" href="#five!"><img src="./Assets/imgs/slide-5.jpg"></a>
-                        <a class="carousel-item z-depth-3" href="#five!"><img src="./Assets/imgs/slide-6.jpg"></a>
-                        <a class="carousel-item z-depth-3" href="#five!"><img src="./Assets/imgs/slide-7.jpg"></a>
-                        <a class="carousel-item z-depth-3" href="#five!"><img src="./Assets/imgs/slide-8.jpg"></a>
+                    <div class="carousel images">
+                        <img class="carousel-item z-depth-3" src="./Assets/imgs/slide-1.jpg">
+                        <img class="carousel-item z-depth-3" src="./Assets/imgs/slide-2.jpg">
+                        <img class="carousel-item z-depth-3" src="./Assets/imgs/slide-3.jpg">
+                        <img class="carousel-item z-depth-3" src="./Assets/imgs/slide-4.jpg">
+                        <img class="carousel-item z-depth-3" src="./Assets/imgs/slide-5.jpg">
+                        <img class="carousel-item z-depth-3" src="./Assets/imgs/slide-6.jpg">
+                        <img class="carousel-item z-depth-3" src="./Assets/imgs/slide-7.jpg">
+                        <img class="carousel-item z-depth-3" src="./Assets/imgs/slide-8.jpg">
                     </div>
                 </div>
             </div>
@@ -89,16 +89,28 @@
                 <p>A good choice for 1-20 items, can be personalized without extra cost. Limited to 1 to 2 color
                     design. Can press on any color item with no added charge.</p>
                 <h5><b>Transfer</b></h5>
-                <p>A good choice for 1-20 items, can be personalized without extra cost. Unlimited colors, does fade over time. Can press on any color, dark colors do have an upcharge.</p>
+                <p>A good choice for 1-20 items, can be personalized without extra cost. Unlimited colors, does fade
+                    over time. Can press on any color, dark colors do have an upcharge.</p>
                 <h5><b>Decals</b></h5>
                 <p>Want a vinyl sticker decal for your car, cup, notebook, window...we can do it!</p>
                 <h5><b>Yard Signs</b></h5>
-                <p>Corrugated signs are here! We can print unlimited color. Or choose a sign color and a vinyl color to have pressed.</p>
+                <p>Corrugated signs are here! We can print unlimited color. Or choose a sign color and a vinyl color to
+                    have pressed.</p>
                 <h5><b>Magnetic Signs</b></h5>
                 <p>Typically 12"x24" can be printed in unlimited color, durable.</p>
             </div>
+            <div class="carousel center testimonials">
+                <h4><b>What People are Saying</b></h4>
+                <p class="carousel-item testimonial"><i>Great service all around. I was happy with my experience here.</i><br> <b>-Arian M.</b></p>
+                <p class="carousel-item testimonial"><i>This place is awesome. They monogrammed a beautiful baby blanket for us, and it came out looking gorgeous. The prices were reasonable, speedy turnaround, and just plain nice people to work with. I'll definitely be returning. </i><br> <b>-Beth D.</b></p>
+                <p class="carousel-item testimonial"><i>I love this place! Reasonable prices for customizable items. Buy the item there or bring one from home. I get my hubby's work shirts embroidered for under $10, and usually complete in about a week. Awesome!!</i><br> <b>-Marissa S.</b></p>
+                <p class="carousel-item testimonial"><i>Fast, friendly and affordable. The work was perfect. You can't go wrong with these guys!</i><br> <b>-Jeff J.</b></p>
+                <p class="carousel-item testimonial"><i>Great customer service, quick turnaround & quality work!</i><br> <b>-Chasta W.</b></p>
+                <p class="carousel-item testimonial"><i>Great embroidery work and great customer service!</i><br> <b>-Michelle M.</b></p>
+                <p class="carousel-item testimonial"><i>I have been working with WB&M for my company clothing for over 5 years now. The work is always very professional, timely, and affordable. Angel has spent time making sure we get the colors exactly the way we need them, and the finished product is sharp and attention getting. Because of this, I now get shirts done for our whole national sales staff with WB&M.  If you want professionally embroidered clothing with sharp logos, I could not recommend them any more highly.</i><br> <b>-Howard F.</b></p>
+            </div>
         </div>
-    </main> <!-- basic contact info social media icons -->
+    </main>
     <footer class="page-footer">
         <div class="container">
             <div class="row" id="footer-container">
@@ -140,10 +152,20 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script>
         $(document).ready(function () {
-            $('.carousel').carousel();
+            $('.carousel.images').carousel({
+                duration: 400
+            });
             setInterval(function () {
-                $(".carousel").carousel('next');
-            }, 3500)
+                $(".carousel.images").carousel('next');
+            }, 4500)
+            $('.carousel.center.testimonials').carousel({
+                numVisable: 1,
+                shift: 600,
+                duration: 500,
+            })
+            setInterval(function () {
+                $(".carousel.center.testimonials").carousel('next');
+            }, 8500)
         });
     </script>
 </body>
