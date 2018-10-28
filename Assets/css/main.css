@@ -1,73 +1,81 @@
 body {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-    background: url(../imgs/background.jpg) no-repeat center center fixed;
-    background-size: cover;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  background: url(../imgs/background.jpg) no-repeat center center fixed;
+  background-size: cover;
 }
 
 main {
-    flex: 1 0 auto;
+  flex: 1 0 auto;
 }
 
 #center-content {
-    width: 90vw;
-    margin: 50px auto 50px auto;
-    padding: 1em;
-    min-height: 500px;
-    max-height: auto;
-    background: rgba(154, 228, 255, 0.911);
-    border-radius: 9px; 
+  width: 90vw;
+  margin: 50px auto 50px auto;
+  padding: 1em;
+  min-height: 500px;
+  max-height: auto;
+  background: rgba(154, 228, 255, 0.911);
+  border-radius: 9px;
 }
 
 .main-head {
-    text-align: center;
-    padding: 1em;
-    color: white;
-    width: 90vw;
-    margin: 50px auto 0px auto;
-    background: linear-gradient(to right, #362b53f6, #652d69f6);
-    border-radius: 9px;
+  text-align: center;
+  padding: 1em;
+  color: white;
+  width: 90vw;
+  margin: 50px auto 0px auto;
+  background: linear-gradient(to right, #362b53f6, #652d69f6);
+  border-radius: 9px;
 }
 
 .welcome {
-    text-shadow: 2px 2px 2px rgba(75, 74, 74, 0.849);
+  text-shadow: 2px 2px 2px rgba(75, 74, 74, 0.849);
 }
 
 #main-break {
-    border: 1px solid rgb(143, 176, 219);
-    width: 60%;
-    opacity: .8;
+  border: 1px solid rgb(143, 176, 219);
+  width: 60%;
+  opacity: 0.8;
 }
 
 .main-text {
-    width: 60%;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: justify;
-    font-size: 18px;
+  width: 60%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: justify;
+  font-size: 18px;
+}
+
+.company {
+  font-size: 36px;
+  line-height: 25px;
 }
 
 .lower-main {
-    width: 60%;
-    margin: auto;
-    display: grid;
-    grid-template-columns: 2fr 2fr;
+  width: 60%;
+  margin: auto;
+  display: grid;
+  margin-top: -50px;
+  grid-template-columns: 2fr 2fr;
 }
 
 .why-container {
-    width: 100%;
-    padding: 1em;
-    margin: auto;
+  width: 100%;
+  font-size: 18px;
+  padding: 1em;
+
+  margin: auto;
 }
 
 .why li {
-    list-style-type: disc !important;
-    text-align: left;
+  list-style-type: disc !important;
+  text-align: left;
 }
 
 .image-slider {
-    width: 100%;
+  width: 100%;
 }

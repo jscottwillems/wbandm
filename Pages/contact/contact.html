@@ -13,7 +13,7 @@
     <link rel="stylesheet" type="text/css" href="../../Assets/css/footer.css">
     <link rel="stylesheet" type="text/css" href="../../Assets/css/contact.css">
     <script src="https://www.gstatic.com/firebasejs/5.5.2/firebase.js"></script>
-    <script src="/Assets/js/form.js"></script>
+    <script src="../../Assets/js/form.js"></script>
 </head>
 
 <body onload="init()">
@@ -27,82 +27,106 @@
             <ul id="links" class="right">
                 <li><a href="../about/about.html">ABOUT</a></li>
                 <!-- <li><a href="#!">PORTFOLIO</a></li> -->
-                <li><a href="../user/user.html">CATALOGUES</a></li>
+                <li><a href="../user/user.html">CATALOGS</a></li>
                 <li><a href="../faqs/faqs.html">FAQS</a></li>
                 <li><a href="../contact/contact.html">CONTACT</a></li>
             </ul>
         </div>
     </nav>
     <main>
-        <div id="center-content" class="center z-depth-3">
+        <div class="main-head z-depth-3">
             <h2 class="welcome"><b>Contact Us</b></h2>
             <br>
             <hr id="main-break">
             <br>
+        </div>
+        <div id="center-content" class="center z-depth-3">
             <div class="main-text">
-                <h3>Contact about:</h3>
-                <form id = "contact_select" method="">
-                     <select id = "sel_contactType" onchange="newFormType()" name="contactSelect">
-                      <option id = "ct_select" value="makeSelection" disabled selected>-select an option-</option>
-                      <option id = "ct_customStores" value="custom-stores">Starting a custom store</option>
-                      <option id = "ct_order" value="order">Placing an order</option>
-                      <option id = "ct_other" value="other">Other</option>
-                    </select> 
+                <h2>Contact about:</h2>
+                <form id="contact_select" method="">
+                    <select id="sel_contactType" onchange="newFormType()" name="contactSelect">
+                        <option id="ct_select" value="makeSelection" disabled selected>-select an option-</option>
+                        <option id="ct_customStores" value="custom-stores">Starting a custom store</option>
+                        <option id="ct_order" value="order">Placing an order</option>
+                        <option id="ct_other" value="other">Other</option>
+                    </select>
                 </form>
-                <div id = "formBay">
-                    <div id = "fc_error" class = "formContent">It appears there was trouble processing your request. Please check your inputs.</div>
-                    <div id = "fc_success" class = "formContent">We've received your information and will be in touch shortly!</div>    
-                    <div id = "fc_customStores" class="formContent">
-                        <h2>Creating a store for your custom design</h2>
-                        <p>Fill out the form below to get started opening a custom store with your design! Perfect for event, team or business t-shirts and accessories.</p>
-                        <form method="" id = "contact_customStores">
+                <div id="formBay">
+                    <div id="fc_error" class="formContent">It appears there was trouble processing your request. Please
+                        check your inputs.</div>
+                    <div id="fc_success" class="formContent">We've received your information and will be in touch
+                        shortly!</div>
+                    <div id="fc_customStores" class="formContent">
+                        <h3>Creating a store for your custom design</h3>
+                        <p>Fill out the form below to get started opening a custom store with your design! Perfect for
+                            event, team or business t-shirts and accessories.</p>
+                        <form method="" id="contact_customStores">
                             Store Name:<br>
-                            <input type="text" name="storeName"><p></p>
+                            <input type="text" name="storeName">
+                            <p></p>
                             Name:<br>
-                            <input type="text" name="name"><p></p>
+                            <input type="text" name="name">
+                            <p></p>
                             Email:<br>
-                            <input type="text" name="email"><p></p>
+                            <input type="text" name="email">
+                            <p></p>
                             Phone:<br>
-                            <input type="text" name="phone"><p></p>
+                            <input type="text" name="phone">
+                            <p></p>
                             Message:<br>
-                            <textarea cols="40" rows="5" name="message"></textarea><p></p>
-                            
-                            <input type="button" name ="submit" value="Submit" onclick="submitForm(e)">
+                            <textarea cols="40" rows="5" name="message"></textarea>
+                            <p></p>
+
+                            <input type="button" name="submit" value="Submit" onclick="submitForm(e)">
                         </form>
                     </div>
-                    <div id = "fc_order" class="formContent">
+                    <div id="fc_order" class="formContent">
                         <h2>Placing an order for your custom design</h2>
                         <p>Fill out the form below to get started with your custom order.</p>
-                        <form method="" id = "contact_order">
+                        <form method="" id="contact_order">
                             Name:<br>
-                            <input type="text" name="name"><p></p>
+                            <input type="text" name="name">
+                            <p></p>
                             Email:<br>
-                            <input type="text" name="email"><p></p>
+                            <input type="text" name="email">
+                            <p></p>
                             Phone:<br>
-                            <input type="text" name="phone"><p></p>
-                            Tell us what you can about your order (the logo or image, products, quantities, colors, sizes):<br>
-                            <textarea cols="40" rows="5" name="message"></textarea><p></p>
-                            
-                            <input type="button" name ="submit" value="Submit" onclick="submitForm(e)">
+                            <input type="text" name="phone">
+                            <p></p>
+                            Tell us what you can about your order (the logo or image, products, quantities, colors,
+                            sizes):<br>
+                            <textarea cols="40" rows="5" name="message"></textarea>
+                            <p></p>
+
+                            <input type="button" name="submit" value="Submit" onclick="submitForm(e)">
                         </form>
                     </div>
-                    <div id = "fc_other" class="formContent">
+                    <div id="fc_other" class="formContent">
                         <h2>Contact us</h2>
-                        <form method="" id = "contact_other">
+                        <form method="" id="contact_other">
                             Name:<br>
-                            <input type="text" name="name"><p></p>
+                            <input type="text" name="name">
+                            <p></p>
                             Email:<br>
-                            <input type="text" name="email"><p></p>
+                            <input type="text" name="email">
+                            <p></p>
                             Phone:<br>
-                            <input type="text" name="phone"><p></p>
+                            <input type="text" name="phone">
+                            <p></p>
                             Message:<br>
-                            <textarea cols="40" rows="5" name="message"></textarea><p></p>
-                            
-                            <input type="button" name ="submit" value="Submit" onclick="submitForm(e)">
+                            <textarea cols="40" rows="5" name="message"></textarea>
+                            <p></p>
+
+                            <input type="button" name="submit" value="Submit" onclick="submitForm(e)">
                         </form>
                     </div>
                 </div>
             </div>
+            <br>
+            <br>
+            <br>
+            <h5><b>Come See Us!</b></h5>
+            <br>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3455.327989526099!2d-95.25173958493164!3d29.998737181899!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640b25d1a534cc1%3A0xdb27c8a62bfa7a24!2sW+B+%26+M+Custom+Embroidery!5e0!3m2!1sen!2sus!4v1540653725786"
                 width="500" height="350" frameborder="0" style="border:0" allowfullscreen class="map z-depth-3"></iframe>
         </div>
@@ -131,7 +155,7 @@
                         <li><a class="grey-text text-lighten-3" href="../../index.html">Home</a></li>
                         <li><a class="grey-text text-lighten-3" href="../about/about.html">About</a></li>
                         <li><a class="grey-text text-lighten-3" href="#!">Portfolio</a></li>
-                        <li><a class="grey-text text-lighten-3" href="../user/user.html">Catalogues</a></li>
+                        <li><a class="grey-text text-lighten-3" href="../user/user.html">Catalogs</a></li>
                         <li><a class="grey-text text-lighten-3" href="../faqs/faqs.html">FAQs</a></li>
                         <li><a class="grey-text text-lighten-3" href="../contact/contact.html">Contact</a></li>
                     </ul>
