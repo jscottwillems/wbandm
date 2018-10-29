@@ -12,6 +12,10 @@ textarea {
   resize: none;
 }
 
+.sub-button:hover {
+  background: rgb(231, 229, 229);
+}
+
 .map {
   margin: auto;
   width: 500px;
