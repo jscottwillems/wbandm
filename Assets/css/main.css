@@ -2,7 +2,8 @@ body {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
-  background: url(../imgs/background.jpg) no-repeat center center fixed;
+  /* background: url(../imgs/background.jpg) no-repeat center center fixed; */
+  background: linear-gradient(to right, rgb(158, 157, 157), grey);
   background-size: cover;
 }
 
