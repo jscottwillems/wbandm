@@ -1,162 +1,309 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Catalogs</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="../../Assets/css/main.css">
-    <link rel="stylesheet" type="text/css" href="../../Assets/css/nav.css">
-    <link rel="stylesheet" type="text/css" href="../../Assets/css/footer.css">
-    <link rel="stylesheet" type="text/css" href="../../Assets/css/catalogs.css">
-</head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="../../Assets/css/main.css" />
+    <link rel="stylesheet" type="text/css" href="../../Assets/css/nav.css" />
+    <link rel="stylesheet" type="text/css" href="../../Assets/css/footer.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../../Assets/css/catalogs.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Cormorant"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
+  <body>
     <nav>
-        <div class="nav-wrapper">
-            <ul>
-                <li><a href="../../index.html" class="logo"><img id="logo-nav" src="../../Assets/imgs/logo.png"></a></li>
-                <li id="phone">(281) 540-0033</li>
-                <li><i class="material-icons" id="phone-icon">phone</i></li>
-            </ul>
-            <ul id="links" class="right">
-                <li><a href="../../index.html">HOME</a></li>
-                <li><a href="../about/about.html">ABOUT</a></li>
-                <!-- <li><a href="#!">PORTFOLIO</a></li> -->
-                <li><a href="../user/user.html">CATALOGS</a></li>
-                <li><a href="../faqs/faqs.html">FAQS</a></li>
-                <li><a href="../contact/contact.html">CONTACT</a></li>
-            </ul>
+      <div class="nav-wrapper">
+        <ul>
+          <li>
+            <a href="#" class="logo"
+              ><img id="logo-nav" src="../../Assets/imgs/logo.png"
+            /></a>
+          </li>
+          <li id="phone">(281) 540-0033</li>
+          <li><i class="material-icons" id="phone-icon">phone</i></li>
+        </ul>
+        <ul id="links" class="right">
+          <li><a href="../../index.html">HOME</a></li>
+          <li><a href="../about/about.html">ABOUT</a></li>
+          <li><a href="#">CATALOGS</a></li>
+          <li><a href="../faqs/faqs.html">FAQS</a></li>
+          <li><a href="#contact-modal" class="modal-trigger">CONTACT</a></li>
+        </ul>
+        <div class="modal" id="contact-modal">
+          <h4 class="center">Contact Us:</h4>
+          <div class="row contact-form">
+            <form class="col s12">
+              <div class="row">
+                <div class="input-field col s12">
+                  <input id="name" type="tel" class="validate" />
+                  <label for="name">Name</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <input id="email" type="tel" class="validate" />
+                  <label for="email">Email</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <input id="phone-number" type="tel" class="validate" />
+                  <label for="phone-number">Phone</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <textarea
+                    id="message"
+                    class="materialize-textarea active"
+                  ></textarea>
+                  <label for="message">Message</label>
+                </div>
+              </div>
+              <button
+                class="btn waves-effect waves-light right"
+                type="submit"
+                name="action"
+                id="contact-submit"
+              >
+                Submit
+              </button>
+            </form>
+          </div>
         </div>
+      </div>
     </nav>
     <main>
-        <div class="main-head z-depth-3">
-            <h2 class="welcome">Catalogs</h2>
-            <h6 class="head-tag"><i>Below you'll find some great options for ordering blank apparel!</i></h6>
-            <br>
-            <hr id="main-break">
-            <br>
+      <div class="main-head z-depth-3">
+        <h2 class="welcome">Catalogs</h2>
+        <h6 class="head-tag">
+          <i
+            >Below you'll find some great options for ordering blank apparel!</i
+          >
+        </h6>
+        <br />
+        <hr id="main-break" />
+        <br />
+      </div>
+      <div id="center-content" class="center z-depth-3">
+        <div class="catalog-container">
+          <a href="https://www.alphabroder.com/" target="blank"
+            ><img
+              class="catalog-img z-depth-3"
+              src="../../Assets/imgs/alphabroder.png"
+          /></a>
+          <div class="catalog-text">
+            <h4><b>Alphabroder</b></h4>
+            <p>
+              This is a great option for t-shirts, polos and oxfords. They also
+              supply headwear, aprons, bags, blankets and rally towels!
+            </p>
+          </div>
+          <br />
+          <br />
+          <a href="https://www.sanmar.com/" target="blank"
+            ><img
+              class="catalog-img z-depth-3"
+              src="../../Assets/imgs/sanmar.png"
+          /></a>
+          <div class="catalog-text">
+            <h4><b>SanMar</b></h4>
+            <p>
+              This company carries high quality brands of shirts, sweatshirts,
+              caps, workwear, bags, accessories and much more.
+            </p>
+          </div>
+          <br />
+          <br />
+          <a href="https://www.outdoorcap.com/" target="blank"
+            ><img
+              class="catalog-img z-depth-3"
+              src="../../Assets/imgs/outdoorcap.jpg"
+          /></a>
+          <div class="catalog-text">
+            <h4><b>Outdoor Cap</b></h4>
+            <p>Lots of caps in all different styles and colors here!</p>
+          </div>
+          <br />
+          <br />
+          <a href="https://ottocap.com/" target="blank"
+            ><img
+              class="catalog-img z-depth-3"
+              style="height:33vh"
+              src="../../Assets/imgs/otto.png"
+          /></a>
+          <div class="catalog-text">
+            <h4><b>OTTO</b></h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad et
+              eveniet tenetur laboriosam alias. Eius, ea? Repellat, vero harum
+              corrupti numquam, rerum molestias, at tempora pariatur odio
+              deleniti earum ratione.
+            </p>
+          </div>
+          <br />
+          <br />
+          <a href="https://www.augustasportswear.com/" target="blank"
+            ><img
+              class="catalog-img z-depth-3"
+              src="../../Assets/imgs/augusta.jpg"
+          /></a>
+          <div class="catalog-text">
+            <h4><b>Augusta Sportswear</b></h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
+              saepe dignissimos in odio cumque neque dolore, illo, corporis
+              sequi, culpa autem similique ipsum rerum natus modi? Odit voluptas
+              a rerum.
+            </p>
+          </div>
+          <br />
+          <br />
+          <a href="https://www.trimountain.com/" target="blank"
+            ><img
+              class="catalog-img z-depth-3"
+              src="../../Assets/imgs/tri-mountain.jpg"
+          /></a>
+          <div class="catalog-text">
+            <h4><b>Tri-Mountain</b></h4>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Accusantium exercitationem obcaecati laboriosam quos veniam
+              dignissimos. Suscipit nihil explicabo temporibus rerum a
+              praesentium at nulla itaque distinctio. Omnis ex sed sequi.
+            </p>
+          </div>
+          <br />
+          <br />
+          <a href="https://www.katisportcap.com/" target="blank"
+            ><img class="catalog-img z-depth-3" src="../../Assets/imgs/kati.png"
+          /></a>
+          <div class="catalog-text">
+            <h4><b>Kati</b></h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
+              quam facere perspiciatis molestiae sapiente atque minima accusamus
+              fuga iure aliquid. Vitae quas commodi nihil officiis
+              necessitatibus facilis repudiandae totam dolores.
+            </p>
+          </div>
+          <br />
+          <br />
+          <a href="https://www.bawonline.com/" target="blank"
+            ><img class="catalog-img z-depth-3" src="../../Assets/imgs/baw.jpg"
+          /></a>
+          <div class="catalog-text">
+            <h4><b>BAW</b></h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi
+              nihil eos atque quisquam beatae asperiores ad possimus aut harum
+              voluptatum ullam provident molestiae, natus distinctio explicabo
+              quis quaerat aliquam non?
+            </p>
+          </div>
+          <br />
+          <br />
+          <a href="https://www.nissincap.com/" target="blank"
+            ><img
+              class="catalog-img z-depth-3"
+              src="../../Assets/imgs/nissin.png"
+          /></a>
+          <div class="catalog-text">
+            <h4><b>Nissin</b></h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi
+              nihil eos atque quisquam beatae asperiores ad possimus aut harum
+              voluptatum ullam provident molestiae, natus distinctio explicabo
+              quis quaerat aliquam non?
+            </p>
+          </div>
+          <br />
         </div>
-        <div id="center-content" class="center z-depth-3">
-            <div class="catalog-container">
-                <a href="https://www.alphabroder.com/" target="blank"><img class="catalog-img z-depth-3" src="../../Assets/imgs/alphabroder.png"></a>
-                <div class="catalog-text">
-                    <h4><b>Alphabroder</b></h4>
-                    <p>This is a great option for t-shirts, polos and oxfords. They also supply headwear, aprons, bags,
-                        blankets and rally towels!</p>
-                </div>
-                <br>
-                <br>
-                <a href="https://www.sanmar.com/" target="blank"><img class="catalog-img z-depth-3" src="../../Assets/imgs/sanmar.png"></a>
-                <div class="catalog-text">
-                    <h4><b>SanMar</b></h4>
-                    <p>This company carries high quality brands of shirts, sweatshirts, caps, workwear, bags,
-                        accessories and much more.</p>
-                </div>
-                <br>
-                <br>
-                <a href="https://www.outdoorcap.com/" target="blank"><img class="catalog-img z-depth-3" src="../../Assets/imgs/outdoorcap.jpg"></a>
-                <div class="catalog-text">
-                    <h4><b>Outdoor Cap</b></h4>
-                    <p>Lots of caps in all different styles and colors here!</p>
-                </div>
-                <br>
-                <br>
-                <a href="https://ottocap.com/" target="blank"><img class="catalog-img z-depth-3" style="height:33vh" src="../../Assets/imgs/otto.png"></a>
-                <div class="catalog-text">
-                    <h4><b>OTTO</b></h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad et eveniet tenetur laboriosam alias. Eius, ea? Repellat, vero harum corrupti numquam, rerum molestias, at tempora pariatur odio deleniti earum ratione.</p>
-                </div>
-                <br>
-                <br>
-                <a href="https://www.augustasportswear.com/" target="blank"><img class="catalog-img z-depth-3" src="../../Assets/imgs/augusta.jpg"></a>
-                <div class="catalog-text">
-                    <h4><b>Augusta Sportswear</b></h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam saepe dignissimos in odio cumque neque dolore, illo, corporis sequi, culpa autem similique ipsum rerum natus modi? Odit voluptas a rerum.</p>
-                </div>
-                <br>
-                <br>
-                <a href="https://www.trimountain.com/" target="blank"><img class="catalog-img z-depth-3" src="../../Assets/imgs/tri-mountain.jpg"></a>
-                <div class="catalog-text">
-                    <h4><b>Tri-Mountain</b></h4>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium exercitationem obcaecati laboriosam quos veniam dignissimos. Suscipit nihil explicabo temporibus rerum a praesentium at nulla itaque distinctio. Omnis ex sed sequi.</p>
-                </div>
-                <br>
-                <br>
-                <a href="https://www.katisportcap.com/" target="blank"><img class="catalog-img z-depth-3" src="../../Assets/imgs/kati.png"></a>
-                <div class="catalog-text">
-                    <h4><b>Kati</b></h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum quam facere perspiciatis molestiae sapiente atque minima accusamus fuga iure aliquid. Vitae quas commodi nihil officiis necessitatibus facilis repudiandae totam dolores.</p>
-                </div>
-                <br>
-                <br>
-                <a href="https://www.bawonline.com/" target="blank"><img class="catalog-img z-depth-3" src="../../Assets/imgs/baw.jpg"></a>
-                <div class="catalog-text">
-                    <h4><b>BAW</b></h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi nihil eos atque quisquam beatae asperiores ad possimus aut harum voluptatum ullam provident molestiae, natus distinctio explicabo quis quaerat aliquam non?</p>
-                </div>
-                <br>
-                <br>
-                <a href="https://www.nissincap.com/" target="blank"><img class="catalog-img z-depth-3" src="../../Assets/imgs/nissin.png"></a>
-                <div class="catalog-text">
-                    <h4><b>Nissin</b></h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi nihil eos atque quisquam beatae asperiores ad possimus aut harum voluptatum ullam provident molestiae, natus distinctio explicabo quis quaerat aliquam non?</p>
-                </div>
-                <br>
-            </div>
-            <div class="social-links center">
-                <ul>
-                    <a href="https://www.facebook.com/wbandm/" target="blank">f</a>
-                    <a href="https://www.instagram.com/wbandmembroidery/" target="blank">l</a>
-                    <a href="https://www.pinterest.com/humblewbandm/" target="blank">p</a>
-                </ul>
-            </div>
+        <div class="social-links center">
+          <ul>
+            <a href="https://www.facebook.com/wbandm/" target="blank">f</a>
+            <a href="https://www.instagram.com/wbandmembroidery/" target="blank"
+              >l</a
+            >
+            <a href="https://www.pinterest.com/humblewbandm/" target="blank"
+              >p</a
+            >
+          </ul>
         </div>
+      </div>
     </main>
     <footer class="page-footer">
-        <div class="container">
-            <div class="row" id="footer-container">
-                <div id="footer-content" class="center">
-                    <!-- <div id="img-container">
-                        <img id="footer-back" src="../../Assets/imgs/black-design-png.png">
-                    </div> -->
-                    <img id="logo-footer" src="../../Assets/imgs/logo.png">
-                    <p class="grey-text text-lighten-4" id="store-info">Store Hours:<br>
-                        Monday - Friday; 9:00am - 5:30pm
-                        <br>
-                        Fax: 281-540-0033
-                        ​<br>
-                        1702 1st St E Suite C
-                        <br>
-                        Humble, TX 77338</p>
-                    <hr>
-                </div>
-                <div id="footer-links" class="center">
-                    <h5 class="white-text">Navigation</h5>
-                    <ul class="foot-links">
-                        <li><a class="grey-text text-lighten-3" href="../../index.html">Home</a></li>
-                        <li><a class="grey-text text-lighten-3" href="../about/about.html">About</a></li>
-                        <!-- <li><a class="grey-text text-lighten-3" href="#!">Portfolio</a></li> -->
-                        <li><a class="grey-text text-lighten-3" href="#">Catalogs</a></li>
-                        <li><a class="grey-text text-lighten-3" href="../faqs/faqs.html">FAQs</a></li>
-                        <li><a class="grey-text text-lighten-3" href="../contact/contact.html">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
+      <div class="container">
+        <div class="row" id="footer-container">
+          <div id="footer-content" class="center">
+            <!--
+              <div id="img-container">
+                  <img id="footer-back" src="../../Assets/imgs/black-design-png.png">
+              </div>
+            -->
+            <img id="logo-footer" src="../../Assets/imgs/logo.png" />
+            <p class="grey-text text-lighten-4" id="store-info">
+              Store Hours:<br />
+              Monday - Friday; 9:00am - 5:30pm <br />
+              Fax: 281-540-0033 ​<br />
+              1702 1st St E Suite C <br />
+              Humble, TX 77338
+            </p>
+            <hr />
+          </div>
+          <div id="footer-links" class="center">
+            <h5 class="white-text">Navigation</h5>
+            <ul class="foot-links">
+              <li>
+                <a class="grey-text text-lighten-3" href="../../index.html"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a class="grey-text text-lighten-3" href="../about/about.html"
+                  >About</a
+                >
+              </li>
+              <li><a class="grey-text text-lighten-3" href="#">Catalogs</a></li>
+              <li>
+                <a class="grey-text text-lighten-3" href="../faqs/faqs.html"
+                  >FAQs</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="footer-copyright">
-            <div class="container" id="bottom">
-                © 2018 WB&M
-                <a class="grey-text text-lighten-4 right" href="#!">Privacy Policy</a>
-            </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container" id="bottom">
+          © 2018 WB&M
+          <a class="grey-text text-lighten-4 right" href="#!">Privacy Policy</a>
         </div>
+      </div>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-</body>
-
-
+    <script>
+      $(".modal").modal();
+      $("#textarea1").val("New Text");
+      M.textareaAutoResize($("#textarea1"));
+    </script>
+  </body>
 </html>

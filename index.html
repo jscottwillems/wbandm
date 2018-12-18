@@ -1,207 +1,367 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>WBandM</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="Assets/css/main.css">
-    <link rel="stylesheet" type="text/css" href="Assets/css/nav.css">
-    <link rel="stylesheet" type="text/css" href="Assets/css/footer.css">
-    <link rel="icon" type="image/png" href="Assets/imgs/favicon.png">
-</head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="Assets/css/main.css" />
+    <link rel="stylesheet" type="text/css" href="Assets/css/nav.css" />
+    <link rel="stylesheet" type="text/css" href="Assets/css/footer.css" />
+    <link rel="icon" type="image/png" href="Assets/imgs/favicon.png" />
+    <link href="https://fonts.googleapis.com/css?family=Cormorant" rel="stylesheet">
+  </head>
 
-<body>
-    <!-- social media icons -->
+  <body>
     <nav>
-        <div class="nav-wrapper">
-            <ul>
-                <li><a href="#" class="logo"><img id="logo-nav" src="./Assets/imgs/logo.png"></a></li>
-                <li id="phone">(281) 540-0033</li>
-                <li><i class="material-icons" id="phone-icon">phone</i></li>
-            </ul>
-            <ul id="links" class="right">
-                <li><a href="#">HOME</a></li>
-                <li><a href="Pages/about/about.html">ABOUT</a></li>
-                <!-- <li><a href="#!">PORTFOLIO</a></li> -->
-                <li><a href="Pages/catalogs/catalogs.html">CATALOGS</a></li>
-                <li><a href="Pages/faqs/faqs.html">FAQS</a></li>
-                <li><a href="Pages/contact/contact.html">CONTACT</a></li>
-            </ul>
+      <div class="nav-wrapper">
+        <ul>
+          <li>
+            <a href="#" class="logo"
+              ><img id="logo-nav" src="./Assets/imgs/logo.png"
+            /></a>
+          </li>
+          <li id="phone">(281) 540-0033</li>
+          <li><i class="material-icons" id="phone-icon">phone</i></li>
+        </ul>
+        <ul id="links" class="right">
+          <li><a href="#">HOME</a></li>
+          <li><a href="Pages/about/about.html">ABOUT</a></li>
+          <li><a href="Pages/catalogs/catalogs.html">CATALOGS</a></li>
+          <li><a href="Pages/faqs/faqs.html">FAQS</a></li>
+          <li><a href="#contact-modal" class="modal-trigger">CONTACT</a></li>
+        </ul>
+        <div class="modal" id="contact-modal">
+          <h4 class="center">Contact Us:</h4>
+          <div class="row contact-form">
+            <form class="col s12">
+              <div class="row">
+                <div class="input-field col s12">
+                  <input id="name" type="tel" class="validate" />
+                  <label for="name">Name</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <input id="email" type="tel" class="validate" />
+                  <label for="email">Email</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <input id="phone-number" type="tel" class="validate" />
+                  <label for="phone-number">Phone</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <textarea
+                    id="message"
+                    class="materialize-textarea active"
+                  ></textarea>
+                  <label for="message">Message</label>
+                </div>
+              </div>
+              <button
+                class="btn waves-effect waves-light right"
+                type="submit"
+                name="action"
+                id="contact-submit"
+              >
+                Submit
+              </button>
+            </form>
+          </div>
         </div>
+      </div>
     </nav>
     <main>
-        <div class="main-head z-depth-3">
-            <h2 class="welcome">Welcome to WB&M!</h2>
-            <h6 class="head-tag"><i>From One to Infinity... Every Job Displays Superior Creativity</i></h6>
-            <br>
-            <hr id="main-break">
-            <br>
+      <div class="main-head z-depth-3">
+        <h2 class="welcome">Welcome to WB&M!</h2>
+        <h6 class="head-tag">
+          <i>From One to Infinity... Every Job Displays Superior Creativity</i>
+        </h6>
+        <br />
+        <hr id="main-break" />
+        <br />
+      </div>
+      <div id="center-content" class="center z-depth-3">
+        <div class="main-text">
+          <p>
+            <span class="company">WB&M</span> is a small, local, family-owned business
+            dedicated to creating your own custom orders. From the initial
+            consultation, throughout the design phase and final production, our
+            drive is to meet all customer needs and satisfaction. With
+            Embroidery and Screen Printing being our most popular services, we
+            also offer banners, thermal film and just about any imprinting that
+            you would like on anything that you would like.
+          </p>
         </div>
-        <div id="center-content" class="center z-depth-3">
-            <div class="main-text">
-                <p><b class="company">WB&M</b> is a small, local, family-owned business dedicated to creating your own
-                    custom orders.
-                    From the
-                    initial consultation, throughout the design phase and final production, our drive is to meet all
-                    customer needs and satisfaction. With Embroidery and Screen Printing being our most popular
-                    services, we also offer banners, thermal
-                    film and just about any imprinting that you would like on anything that you would like.</p>
+        <div class="lower-main">
+          <div class="why-container">
+            <p class="center why-wbm">Why WB&M? We strive to:</p>
+            <ul class="why">
+              <li>Be attentive to detail</li>
+              <li>Produce impressive work</li>
+              <li>Be fulfilling of all of our customers demands</li>
+              <li>Consistently exceed expectations</li>
+              <li>Work as a determined and result oriented team</li>
+            </ul>
+          </div>
+          <div class="image-slider">
+            <div class="carousel images">
+              <img
+                class="carousel-item z-depth-3"
+                src="./Assets/imgs/slide-1.jpg"
+              />
+              <img
+                class="carousel-item z-depth-3"
+                src="./Assets/imgs/slide-2.jpg"
+              />
+              <img
+                class="carousel-item z-depth-3"
+                src="./Assets/imgs/slide-3.jpg"
+              />
+              <img
+                class="carousel-item z-depth-3"
+                src="./Assets/imgs/slide-4.jpg"
+              />
+              <img
+                class="carousel-item z-depth-3"
+                src="./Assets/imgs/slide-5.jpg"
+              />
+              <img
+                class="carousel-item z-depth-3"
+                src="./Assets/imgs/slide-6.jpg"
+              />
+              <img
+                class="carousel-item z-depth-3"
+                src="./Assets/imgs/slide-7.jpg"
+              />
+              <img
+                class="carousel-item z-depth-3"
+                src="./Assets/imgs/slide-8.jpg"
+              />
+              <img
+                class="carousel-item z-depth-3"
+                src="./Assets/imgs/slide-9.jpg"
+              />
+              <img
+                class="carousel-item z-depth-3"
+                src="./Assets/imgs/slide-10.jpg"
+              />
             </div>
-            <div class="lower-main">
-                <div class="why-container">
-                    <p class="center"><b>Why WB&M? We strive to:</b></p>
-                    <ul class="why">
-                        <li>Be attentive to detail</li>
-                        <li>Produce impressive work</li>
-                        <li>Be fulfilling of all of our customers demands</li>
-                        <li>Consistently exceed expectations</li>
-                        <li>Work as a determined and result oriented team</li>
-                    </ul>
-                </div>
-                <div class="image-slider">
-                    <div class="carousel images">
-                        <img class="carousel-item z-depth-3" src="./Assets/imgs/slide-1.jpg">
-                        <img class="carousel-item z-depth-3" src="./Assets/imgs/slide-2.jpg">
-                        <img class="carousel-item z-depth-3" src="./Assets/imgs/slide-3.jpg">
-                        <img class="carousel-item z-depth-3" src="./Assets/imgs/slide-4.jpg">
-                        <img class="carousel-item z-depth-3" src="./Assets/imgs/slide-5.jpg">
-                        <img class="carousel-item z-depth-3" src="./Assets/imgs/slide-6.jpg">
-                        <img class="carousel-item z-depth-3" src="./Assets/imgs/slide-7.jpg">
-                        <img class="carousel-item z-depth-3" src="./Assets/imgs/slide-8.jpg">
-                        <img class="carousel-item z-depth-3" src="./Assets/imgs/slide-9.jpg">
-                        <img class="carousel-item z-depth-3" src="./Assets/imgs/slide-10.jpg">
-                    </div>
-                </div>
-            </div>
-            <div class="center-text">
-                <h4 class="center"><b>We are proud to offer:</b></h4>
-                <h5><b>Embroidery</b></h5>
-                <p class="services">We are the vehicle to your creativity. Choose from our multiple font options and
-                    stock designs, or
-                    bring in your own and we will digitize it to sew!
-                    This service is useful for company logos to be sewn on shirts, hats, bags; sport team hats and
-                    bags; school shirts; gifts and decor.</p>
-                <h5><b>Screen Printing</b></h5>
-                <p class="services">A good choice for 15-1000+ items, all items receiving the same design. Unlimited
-                    colors, added
-                    colors do increase cost. Can print on any color with no added charge.</p>
-                <h5><b>Thermofilm</b></h5>
-                <p class="services">A good choice for 1-20 items, can be personalized without extra cost. Limited to 1
-                    to 2 color
-                    design. Can press on any color item with no added charge.</p>
-                <h5><b>Transfer</b></h5>
-                <p class="services">A good choice for 1-20 items, can be personalized without extra cost. Unlimited
-                    colors, does fade
-                    over time. Can press on any color, dark colors do have an upcharge.</p>
-                <h5><b>Decals</b></h5>
-                <p class="services">Want a vinyl sticker decal for your car, cup, notebook, window...we can do it!</p>
-                <h5><b>Yard Signs</b></h5>
-                <p class="services">Corrugated signs are here! We can print unlimited color. Or choose a sign color and
-                    a vinyl color to
-                    have pressed.</p>
-                <h5><b>Magnetic Signs</b></h5>
-                <p class="services">Typically 12" x 24" can be printed in unlimited color, durable.</p>
-            </div>
-            <div class="carousel center testimonials">
-                <h4><b>What People are Saying</b></h4>
-                <p class="carousel-item testimonial"><i>Great service all around. I was happy with my experience here.</i><br>
-                    <b>-Arian M.</b></p>
-                <p class="carousel-item testimonial"><i>This place is awesome. They monogrammed a beautiful baby
-                        blanket for us, and it came out looking gorgeous. The prices were reasonable, speedy
-                        turnaround, and just plain nice people to work with. I'll definitely be returning. </i><br> <b>-Beth
-                        D.</b></p>
-                <p class="carousel-item testimonial"><i>I love this place! Reasonable prices for customizable items.
-                        Buy the item there or bring one from home. I get my hubby's work shirts embroidered for under
-                        $10, and usually complete in about a week. Awesome!!</i><br> <b>-Marissa S.</b></p>
-                <p class="carousel-item testimonial"><i>Fast, friendly and affordable. The work was perfect. You can't
-                        go wrong with these guys!</i><br> <b>-Jeff J.</b></p>
-                <p class="carousel-item testimonial"><i>Great customer service, quick turnaround & quality work!</i><br>
-                    <b>-Chasta W.</b></p>
-                <p class="carousel-item testimonial"><i>Great embroidery work and great customer service!</i><br> <b>-Michelle
-                        M.</b></p>
-                <p class="carousel-item testimonial"><i>I have been working with WB&M for my company clothing for over
-                        5 years now. The work is always very professional, timely, and affordable. Angel has spent time
-                        making sure we get the colors exactly the way we need them, and the finished product is sharp
-                        and attention getting. Because of this, I now get shirts done for our whole national sales
-                        staff with WB&M. If you want professionally embroidered clothing with sharp logos, I could not
-                        recommend them any more highly.</i><br> <b>-Howard F.</b></p>
-            </div>
-            <br>
-            <h5><b>Come See Us!</b></h5>
-            <br>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3455.327989526099!2d-95.25173958493164!3d29.998737181899!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640b25d1a534cc1%3A0xdb27c8a62bfa7a24!2sW+B+%26+M+Custom+Embroidery!5e0!3m2!1sen!2sus!4v1540653725786"
-            width="600" height="450" frameborder="0" style="border:0" allowfullscreen class="map z-depth-3"></iframe>
-            <div class="social-links center">
-                <ul>
-                    <a href="https://www.facebook.com/wbandm/" target="blank">f</a>
-                    <a href="https://www.instagram.com/wbandmembroidery/" target="blank">l</a>
-                    <a href="https://www.pinterest.com/humblewbandm/" target="blank">p</a>
-                </ul>
-            </div>
+          </div>
         </div>
+        <div class="center-text">
+          <h4 class="center"><b>We are proud to offer:</b></h4>
+          <h5><b>Embroidery</b></h5>
+          <p class="services">
+            We are the vehicle to your creativity. Choose from our multiple font
+            options and stock designs, or bring in your own and we will digitize
+            it to sew! This service is useful for company logos to be sewn on
+            shirts, hats, bags; sport team hats and bags; school shirts; gifts
+            and decor.
+          </p>
+          <h5><b>Screen Printing</b></h5>
+          <p class="services">
+            A good choice for 15-1000+ items, all items receiving the same
+            design. Unlimited colors, added colors do increase cost. Can print
+            on any color with no added charge.
+          </p>
+          <h5><b>Thermofilm</b></h5>
+          <p class="services">
+            A good choice for 1-20 items, can be personalized without extra
+            cost. Limited to 1 to 2 color design. Can press on any color item
+            with no added charge.
+          </p>
+          <h5><b>Transfer</b></h5>
+          <p class="services">
+            A good choice for 1-20 items, can be personalized without extra
+            cost. Unlimited colors, does fade over time. Can press on any color,
+            dark colors do have an upcharge.
+          </p>
+          <h5><b>Decals</b></h5>
+          <p class="services">
+            Want a vinyl sticker decal for your car, cup, notebook, window...we
+            can do it!
+          </p>
+          <h5><b>Yard Signs</b></h5>
+          <p class="services">
+            Corrugated signs are here! We can print unlimited color. Or choose a
+            sign color and a vinyl color to have pressed.
+          </p>
+          <h5><b>Magnetic Signs</b></h5>
+          <p class="services">
+            Typically 12" x 24" can be printed in unlimited color, durable.
+          </p>
+        </div>
+        <div class="carousel center testimonials">
+          <h4><b>What People are Saying</b></h4>
+          <p class="carousel-item testimonial">
+            <i>Great service all around. I was happy with my experience here.</i
+            ><br />
+            <b>-Arian M.</b>
+          </p>
+          <p class="carousel-item testimonial">
+            <i
+              >This place is awesome. They monogrammed a beautiful baby blanket
+              for us, and it came out looking gorgeous. The prices were
+              reasonable, speedy turnaround, and just plain nice people to work
+              with. I'll definitely be returning. </i
+            ><br />
+            <b>-Beth D.</b>
+          </p>
+          <p class="carousel-item testimonial">
+            <i
+              >I love this place! Reasonable prices for customizable items. Buy
+              the item there or bring one from home. I get my hubby's work
+              shirts embroidered for under $10, and usually complete in about a
+              week. Awesome!!</i
+            ><br />
+            <b>-Marissa S.</b>
+          </p>
+          <p class="carousel-item testimonial">
+            <i
+              >Fast, friendly and affordable. The work was perfect. You can't go
+              wrong with these guys!</i
+            ><br />
+            <b>-Jeff J.</b>
+          </p>
+          <p class="carousel-item testimonial">
+            <i>Great customer service, quick turnaround & quality work!</i
+            ><br />
+            <b>-Chasta W.</b>
+          </p>
+          <p class="carousel-item testimonial">
+            <i>Great embroidery work and great customer service!</i><br />
+            <b>-Michelle M.</b>
+          </p>
+          <p class="carousel-item testimonial">
+            <i
+              >I have been working with WB&M for my company clothing for over 5
+              years now. The work is always very professional, timely, and
+              affordable. Angel has spent time making sure we get the colors
+              exactly the way we need them, and the finished product is sharp
+              and attention getting. Because of this, I now get shirts done for
+              our whole national sales staff with WB&M. If you want
+              professionally embroidered clothing with sharp logos, I could not
+              recommend them any more highly.</i
+            ><br />
+            <b>-Howard F.</b>
+          </p>
+        </div>
+        <br />
+        <h5><b>Come See Us!</b></h5>
+        <br />
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3455.327989526099!2d-95.25173958493164!3d29.998737181899!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640b25d1a534cc1%3A0xdb27c8a62bfa7a24!2sW+B+%26+M+Custom+Embroidery!5e0!3m2!1sen!2sus!4v1540653725786"
+          width="80%"
+          height="450"
+          frameborder="0"
+          style="border:0"
+          allowfullscreen
+          class="map z-depth-3"
+        ></iframe>
+        <div class="social-links center">
+          <ul>
+            <a href="https://www.facebook.com/wbandm/" target="blank">f</a>
+            <a href="https://www.instagram.com/wbandmembroidery/" target="blank"
+              >l</a
+            >
+            <a href="https://www.pinterest.com/humblewbandm/" target="blank"
+              >p</a
+            >
+          </ul>
+        </div>
+      </div>
     </main>
     <footer class="page-footer">
-        <div class="container">
-            <div class="row" id="footer-container">
-                <div id="footer-content" class="center">
-                    <!-- <div id="img-container">
-                        <img id="footer-back" src="./Assets/imgs/black-design-png.png">
-                    </div> -->
-                    <img id="logo-footer" src="./Assets/imgs/logo.png">
-                    <p class="grey-text text-lighten-4" id="store-info">Store Hours:<br>
-                        Monday - Friday; 9:00am - 5:30pm
-                        <br>
-                        Fax: 281-540-0033
-                        ​<br>
-                        1702 1st St E Suite C
-                        <br>
-                        Humble, TX 77338</p>
-                    <hr>
-                </div>
-                <div id="footer-links" class="center">
-                    <h5 class="white-text">Navigation</h5>
-                    <ul class="foot-links">
-                        <li><a class="grey-text text-lighten-3" href="#!">Home</a></li>
-                        <li><a class="grey-text text-lighten-3" href="Pages/about/about.html">About</a></li>
-                        <!-- <li><a class="grey-text text-lighten-3" href="#!">Portfolio</a></li> -->
-                        <li><a class="grey-text text-lighten-3" href="Pages/catalogs/catalogs.html">Catalogs</a></li>
-                        <li><a class="grey-text text-lighten-3" href="Pages/faqs/faqs.html">FAQs</a></li>
-                        <li><a class="grey-text text-lighten-3" href="Pages/contact/contact.html">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
+      <div class="container">
+        <div class="row" id="footer-container">
+          <div id="footer-content" class="center">
+            <!--
+              <div id="img-container">
+                  <img id="footer-back" src="./Assets/imgs/black-design-png.png">
+              </div>
+            -->
+            <img id="logo-footer" src="./Assets/imgs/logo.png" />
+            <p class="grey-text text-lighten-4" id="store-info">
+              Store Hours:<br />
+              Monday - Friday; 9:00am - 5:30pm <br />
+              Fax: 281-540-0033 ​<br />
+              1702 1st St E Suite C <br />
+              Humble, TX 77338
+            </p>
+            <hr />
+          </div>
+          <div id="footer-links" class="center">
+            <h5 class="white-text">Navigation</h5>
+            <ul class="foot-links">
+              <li><a class="grey-text text-lighten-3" href="#!">Home</a></li>
+              <li>
+                <a
+                  class="grey-text text-lighten-3"
+                  href="Pages/about/about.html"
+                  >About</a
+                >
+              </li>
+              <!--
+                <li><a class="grey-text text-lighten-3" href="#!">Portfolio</a></li>
+              -->
+              <li>
+                <a
+                  class="grey-text text-lighten-3"
+                  href="Pages/catalogs/catalogs.html"
+                  >Catalogs</a
+                >
+              </li>
+              <li>
+                <a class="grey-text text-lighten-3" href="Pages/faqs/faqs.html"
+                  >FAQs</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="footer-copyright">
-            <div class="container" id="bottom">
-                © 2018 WB&M
-                <a class="grey-text text-lighten-4 right" href="#!">Privacy Policy</a>
-            </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container" id="bottom">
+          © 2018 WB&M
+          <a class="grey-text text-lighten-4 right" href="#!">Privacy Policy</a>
         </div>
+      </div>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script>
-        $(document).ready(function () {
-            $('.carousel.images').carousel({
-                duration: 400
-            });
-            setInterval(function () {
-                $(".carousel.images").carousel('next');
-            }, 4500)
-            $('.carousel.center.testimonials').carousel({
-                numVisable: 1,
-                shift: 600,
-                duration: 500,
-            })
-            setInterval(function () {
-                $(".carousel.center.testimonials").carousel('next');
-            }, 8500)
+      $(document).ready(function() {
+        $(".carousel.images").carousel({
+          duration: 400
         });
+        setInterval(function() {
+          $(".carousel.images").carousel("next");
+        }, 4500);
+        $(".carousel.center.testimonials").carousel({
+          numVisable: 1,
+          shift: 600,
+          duration: 500
+        });
+        setInterval(function() {
+          $(".carousel.center.testimonials").carousel("next");
+        }, 8500);
+        $(".modal").modal();
+        $("#textarea1").val("New Text");
+        M.textareaAutoResize($("#textarea1"));
+      });
     </script>
-</body>
-
+  </body>
 </html>
