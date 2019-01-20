@@ -99,6 +99,14 @@ main {
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;;
 }
 
+.occasions {
+  margin-left: 18px;
+}
+
+.occasions li {
+  list-style-type: disc !important;
+}
+
 .lower-main {
   width: 80%;
   margin: auto;
